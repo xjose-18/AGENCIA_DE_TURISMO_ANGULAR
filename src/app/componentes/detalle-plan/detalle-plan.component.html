@@ -1,0 +1,91 @@
+
+  <br>
+  <br>
+  
+<div class="container" *ngFor="let detalle of plan">
+  <br>
+<main  class="containerr">
+  <div class="imagenf" style=" background-image: url('{{detalle.imagen}}');">
+    <div class="col-md-6 cont p px-0">
+    
+     
+      <div class="mover">
+        <h1 class="display-4 fst-italic">{{detalle.titulo}}</h1>
+      <p class="lead p my-3">Santa Martaa</p>
+      </div>
+      <P class="lead pre my-3">{{detalle.precio}}</P>
+      <button  type="button" class="btn boton1  btn-dark" onclick="alert('compra exitosa')"> <a  class="a" href="">Comprar </a></button>
+         
+    </div>
+  </div>
+</main>
+
+
+    
+  <div class="conte">
+    <h1 class=" visually-hidden"></h1>
+    <div   class="container px-4 py-5" id="featured-3" *ngFor="let detalle of plan">
+      <h2 class="pb-2 border-bottom">DESCRIPCION DE PLANES </h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon bg-primary bg-gradient">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+          </div>
+          <h2>Descripcion</h2>
+          <p>{{detalle.descripcion}}</p>
+          
+        </div>
+        <div class="feature col">
+          <div class="feature-icon bg-primary bg-gradient">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+          </div>
+          <h2 >INCLUYE</h2>
+          <ul *ngFor="let incluye of detalle.incluye">
+            <li>{{incluye}}</li>
+          </ul>
+         
+         
+        </div>
+        <div class="feature col">
+          <div class="feature-icon bg-primary bg-gradient">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <h2>IMPORTANTE</h2>
+           
+      <p>{{detalle.importante}}</p>  
+
+          <a href="#" class="icon-link">
+            explorar nuestros planes
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+      <H1>GALERIA</H1>
+      <!-- Modal gallery -->
+      <div class="gallery" *ngFor="let detalle of plan">
+        <div class="gallery_img">
+         
+          <img src="{{detalle.imgg}}" alt="">
+        </div>
+        <div class="gallery_img"> 
+          <img src="{{detalle.imgg2}}" alt="">
+        </div>
+        <div class="gallery_img">
+          <img src="{{detalle.imgg3}}" alt="">
+        </div>
+      </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Modal gallery -->
+    
+</div>
+  </div>
+</div>

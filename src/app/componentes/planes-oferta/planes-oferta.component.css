@@ -1,0 +1,31 @@
+body
+{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/0JH1fKV/1.webp) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: rgb(0, 0, 0);
+    background-color: #6699;
+    color: #FFFF;
+    height: 600px;
+}
+.col{
+    background: transparent;
+    
+}
+.card-body{
+    background-color: black;
+    color: #fff;
+   
+}
+.card-header{
+    background: linear-gradient(70deg, rgb(97, 151, 179), rgb(9, 107, 235));
+    
+}
+.btn-lg {
+    background: linear-gradient(70deg, rgb(4, 39, 236), rgb(9, 107, 235));
+}
+.my-0{
+    color: #FFFF;
+}
